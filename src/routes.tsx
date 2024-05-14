@@ -1,12 +1,12 @@
 import type { ReactElement  } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom'
-import App from './App';
+import Main from './Main';
 
 const Router = (): ReactElement | null => {
   const routes = useRoutes([
     {
       path: "/",
-      element: <App />,
+      element: <Main />,
     },
     {
       path: '*',
