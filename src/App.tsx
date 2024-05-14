@@ -1,14 +1,15 @@
-import React from 'react';
+import { type ReactElement } from 'react';
 import logo from './wip.webp';
 import './App.css';
+import { Box, Container } from '@mui/material';
 
-function App() {
+const App = (): ReactElement => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="logo" />
-      </header>
-    </div>
+    <Box sx={{ backgroundColor: 'var(--background)', minHeight: '100vh' }}>
+      <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+        <img src={logo} alt="logo" width="100%" />
+      </Container>
+    </Box>
   );
 }
 
