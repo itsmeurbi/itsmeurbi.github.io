@@ -4,6 +4,6 @@ import Main from './Main';
 
 test('renders greeting', () => {
   render(<Main />);
-  const salutation = screen.getByText(/This is Miguel, a.k.a Urbi/i);
+  const salutation = screen.getByText(/Ey/i);
   expect(salutation).toBeInTheDocument();
 });
