@@ -7,12 +7,12 @@ import { Box, Container, Grid, Typography, Divider, Link, List, ListItem, ListIt
 import { IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import NabVar from './NavBar';
+import NavBar from './NavBar';
 
 const Main = (): ReactElement => {
   return (
     <>
-      <NabVar/>
+      <NavBar/>
       <Box sx={{ backgroundColor: 'var(--background)', paddingBottom: '5rem' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
           <Grid container spacing={0} sx={{ margin: '1rem 0' }}>
@@ -85,7 +85,7 @@ const Main = (): ReactElement => {
                   When I was a child, I always wanted to be a veterinarian—until the day I met a computer when I was about 8 years old. I would spend hours each day figuring things out, creating 'art' in Paint, and playing video games with my NES/SNES emulator. In middle school, I made a decision: I would become a Computer Systems Engineer.
                 </Typography>
                 <Typography variant="body1">
-                  Now I consider myself a pattionated web developer who likes to actively participate with multidiciplinary projects and contribute to the IT community
+                  Now I consider myself a pasionated web developer who likes to actively participate with multidiciplinary projects and contribute to the IT community
                 </Typography>
               </Box>
             </Grid>
@@ -109,7 +109,7 @@ const Main = (): ReactElement => {
                   <Typography variant="h4">
                     Collaborator
                   </Typography>
-                  <Typography variant="body1">
+                  <Typography variant="body1" sx={{ mt: 1 }}>
                     Always open to collaborate with my friend's side-projects, as long as my agenda allows me hehe
                   </Typography>
                   <Typography variant="body1">
@@ -122,7 +122,7 @@ const Main = (): ReactElement => {
                     <ListItem sx={{ display: 'list-item', py: 0 }}>
                       <ListItemText primary={
                         <Typography variant="body1">
-                          <Link href="https://www.webdevtalks.mx" underline="hover" color="primary" target="_blank">webdevtalks</Link>; the official Web Dev Talks website. Initially built using a now deprecated version of React with custom CSS. I was responsible for migrating the SPA to the latest React version, incorporating TypeScript and Material-UI.
+                          <Link href="https://www.webdevtalks.mx" underline="hover" color="primary" target="_blank">webdevtalks</Link>; the official Web Dev Talks website. Initially built using a now deprecated version of React with custom CSS. I was responsible for migrating the SPA to the latest React version, incorporating TypeScript and Material-UI
                         </Typography>
                       }/>
                     </ListItem>
@@ -133,8 +133,8 @@ const Main = (): ReactElement => {
                   <Typography variant="h4">
                     Community
                   </Typography>
-                  <Typography variant="body1">
-                    Actively involved in the IT community as a speaker, mentor, and event organizer. I am part of the <Link href="https://www.webdevtalks.mx/" underline="hover" color="primary" target="_blank">Web Dev Talks</Link>(WDT) committee, responsible for organizing events, managing social media, and collaborating with speakers. Recent participation includes the <Link href="https://www.facebook.com/story.php?story_fbid=pfbid01C8dLihbxDJ2pN3nQzQoWSchBx8hAvP6YN6UtKVXcNCGt4tro4t5Cidw35K3om4Wl&id=100067931119189&mibextid=qC1gEa" underline="hover" color="primary" target="_blank">10th anniversary of WDT</Link> and <Link href="https://www.facebook.com/story.php?story_fbid=pfbid02VkJUfiiZQZNQeqT8KZb7mYbp4BDnMmeoTs31NcJBfgGiFNstSDCvKzZdciDhojHPl&id=100067931119189&mibextid=qC1gEa" underline="hover" color="primary" target="_blank">GitHub Field Day Mexico</Link>.
+                  <Typography variant="body1" sx={{ mt: 1 }}>
+                    Actively involved in the IT community as a speaker, mentor, and event organizer. I am part of the <Link href="https://www.webdevtalks.mx/" underline="hover" color="primary" target="_blank">Web Dev Talks</Link>(WDT) committee, responsible for organizing events, managing social media, and collaborating with speakers. Recent participation includes the <Link href="https://www.facebook.com/story.php?story_fbid=pfbid01C8dLihbxDJ2pN3nQzQoWSchBx8hAvP6YN6UtKVXcNCGt4tro4t5Cidw35K3om4Wl&id=100067931119189&mibextid=qC1gEa" underline="hover" color="primary" target="_blank">10th anniversary of WDT</Link> and <Link href="https://www.facebook.com/story.php?story_fbid=pfbid02VkJUfiiZQZNQeqT8KZb7mYbp4BDnMmeoTs31NcJBfgGiFNstSDCvKzZdciDhojHPl&id=100067931119189&mibextid=qC1gEa" underline="hover" color="primary" target="_blank">GitHub Field Day Mexico</Link>
                   </Typography>
                 </Box>
               </Box>
@@ -150,7 +150,7 @@ const Main = (): ReactElement => {
               Contributions
             </Typography>
             <Typography variant="body1" sx={{ color: 'var(--secondary)', padding: '0 5rem', textAlign: 'center' }}>
-              Fortunately, I have had the opportunity to contribute to open source and the IT community.
+              Fortunately, I have had the opportunity to contribute to open source and the IT community. Here is a list of a few activities I have participated in
             </Typography>
           </Box>
           <Grid container spacing={0} sx={{ py: 4 }}>
