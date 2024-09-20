@@ -2,7 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Single Page Apps for GitHub Pages</title>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>It's me Urbi!</title>
+    <meta
+      name="description"
+      content="Explore Miguel Angel Urbina's portfolio to discover his professional development projects alongside his personal passions and creative pursuits."
+    >
+    <meta name="keywords" content="portfolio, software engineer" />
+    <meta property="og:title" content="It's me Urbi!" />
+    <meta
+      property="og:description"
+      content="Explore Miguel Angel Urbina's portfolio to discover his professional development projects alongside his personal passions and creative pursuits."
+    />
+    <meta property="og:image" content="https://itsmeurbi.dev/logo512.png" />
+    <meta property="og:url" content="https://itsmeurbi.dev" />
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="linkedin:description"
+      content="Explore Miguel Angel Urbina's portfolio to discover his professional development projects alongside his personal passions and creative pursuits."
+    />
+    <meta property="linkedin:image" content="https://itsmeurbi.dev/logo512.png" />
+    <meta property="linkedin:title" content="It's me Urbi!" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="It's me Urbi!" />
+    <meta
+      name="twitter:description"
+      content="Explore Miguel Angel Urbina's portfolio to discover his professional development projects alongside his personal passions and creative pursuits."
+    />
+    <meta name="twitter:image" content="https://itsmeurbi.dev/logo512.png" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // MIT License
@@ -27,7 +62,7 @@
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/' +
         l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
         (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
         l.hash
