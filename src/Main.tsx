@@ -7,10 +7,12 @@ import { Box, Container, Grid, Typography, Divider, Link, List, ListItem, ListIt
 import { IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import NabVar from './NavBar';
 
 const Main = (): ReactElement => {
   return (
     <>
+      <NabVar/>
       <Box sx={{ backgroundColor: 'var(--background)', paddingBottom: '5rem' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
           <Grid container spacing={0} sx={{ margin: '1rem 0' }}>
