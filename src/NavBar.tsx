@@ -12,6 +12,7 @@ import {
   List,
   ListItem,
   ListItemButton,
+  Button
 } from '@mui/material'
 import { ReactElement } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
@@ -50,8 +51,13 @@ const NavBar = (): ReactElement => {
               <MenuIcon />
             </IconButton>
             <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' } }>
-              <Link to="/" style={{ textDecoration: 'none', marginRight: '1rem', flexShrink: 0 }}>
-                <Typography variant='h6' sx={{ color: 'var(--secondary)' }}>Inicio</Typography>
+              <Link to="/" style={{ textDecoration: 'none', marginRight: '4rem', flexShrink: 0 }}>
+                <Typography variant='h6' sx={{ color: 'var(--secondary)' }}>Urbi</Typography>
+              </Link>
+              <Link to="/personal" style={{ textDecoration: 'none', height: '100%' }}>
+                <Button className={isActive('/personal') ? 'active' : '' } sx={{ height: '100%', borderRadius: '0', textTransform: 'none' }}>
+                  <Typography variant='h6' sx={{ color: 'var(--secondary)' }}>Personal</Typography>
+                </Button>
               </Link>
             </Box>
           </Toolbar>
@@ -63,7 +69,14 @@ const NavBar = (): ReactElement => {
             <ListItem sx={{ px: 0 }}>
               <Link to="/" style={{ textDecoration: 'none', width: '100%' }}>
                 <ListItemButton className={isActive('/') ? 'active' : ''}>
-                  <Typography variant='h6' sx={{ color: 'var(--black)' }}>Inicio</Typography>
+                  <Typography variant='h6' sx={{ color: 'var(--black)' }}>Urbi</Typography>
+                </ListItemButton>
+              </Link>
+            </ListItem>
+            <ListItem sx={{ px: 0 }}>
+              <Link to="/personal" style={{ textDecoration: 'none', width: '100%' }}>
+                <ListItemButton className={isActive('/personal') ? 'active' : ''}>
+                  <Typography variant='h6' sx={{ color: 'var(--black)' }}>Personal</Typography>
                 </ListItemButton>
               </Link>
             </ListItem>

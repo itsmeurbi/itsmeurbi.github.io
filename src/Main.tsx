@@ -143,7 +143,7 @@ const Main = (): ReactElement => {
         </Container>
       </Box>
 
-      <Box sx={{ backgroundColor: 'var(--grey)', padding: '5rem 0' }}>
+      <Box sx={{ backgroundColor: 'var(--grey)', py: 8 }}>
         <Container sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             <Typography variant="h2" sx={{ color: 'var(--secondary)' }}>
