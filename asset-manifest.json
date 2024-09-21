@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.27425c7c.css",
-    "main.js": "/static/js/main.6d02beb3.js",
+    "main.js": "/static/js/main.80b9fb6f.js",
     "static/js/453.64ce8c6b.chunk.js": "/static/js/453.64ce8c6b.chunk.js",
     "static/media/landscape_2.JPG": "/static/media/landscape_2.e83527198cbc84a1d9c8.JPG",
     "static/media/portrait_4.JPG": "/static/media/portrait_4.b3843419e1c9f7a24463.JPG",
@@ -9,6 +9,7 @@
     "static/media/ctg_5.JPG": "/static/media/ctg_5.cdf5b617a7d71578ee4a.JPG",
     "static/media/animal_3.JPG": "/static/media/animal_3.a0994f1dc4a5ea7b3079.JPG",
     "static/media/portrait_5.JPG": "/static/media/portrait_5.655ac03d02edd7a61d99.JPG",
+    "static/media/jose_luis.mp4": "/static/media/jose_luis.5516208fa633702296e8.mp4",
     "static/media/flower_3.JPG": "/static/media/flower_3.3e25145633f5ea7e1e9b.JPG",
     "static/media/portrait_6.JPG": "/static/media/portrait_6.7e9873ff09a38dfa6715.JPG",
     "static/media/ctg_4.JPG": "/static/media/ctg_4.58c08fdfdd0d00ad32c4.JPG",
@@ -92,11 +93,11 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/static/media/roboto-greek-ext-300-normal.b590dbe5c639944366d1.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "main.27425c7c.css.map": "/static/css/main.27425c7c.css.map",
-    "main.6d02beb3.js.map": "/static/js/main.6d02beb3.js.map",
+    "main.80b9fb6f.js.map": "/static/js/main.80b9fb6f.js.map",
     "453.64ce8c6b.chunk.js.map": "/static/js/453.64ce8c6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27425c7c.css",
-    "static/js/main.6d02beb3.js"
+    "static/js/main.80b9fb6f.js"
   ]
 }
