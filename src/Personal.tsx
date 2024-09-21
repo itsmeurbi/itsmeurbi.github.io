@@ -30,6 +30,7 @@ import imagePortrait5 from './assets/images/portrait_5.JPG'
 import imagePortrait6 from './assets/images/portrait_6.JPG'
 import imagePortrait7 from './assets/images/portrait_7.JPG'
 import videoJoseLuis from './assets/images/jose_luis.mp4'
+import Footer from './Footer';
 
 
 const Main = (): ReactElement => {
@@ -112,10 +113,10 @@ const Main = (): ReactElement => {
           </Box>
         </Container>
       </Box>
-      <Box sx={{ backgroundColor: 'var(--light)', py: 8 }}>
+      <Box sx={{ backgroundColor: 'var(--grey)', py: 8 }}>
         <Container>
           <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-            <Typography variant="h2" sx={{ my: 5, textAlign: 'center' }}>Gallery</Typography>
+            <Typography variant="h2" sx={{ my: 5, textAlign: 'center', color: 'var(--light)' }}>Gallery</Typography>
             <Carousel sx={{ width: '100%', my: 4, borderRadius: '.5rem' }} interval={5000} animation={'slide'} height={'50vw'} indicators={false} duration={750} >
               <LazyLoadImage src={imageAnimal1} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imagePortrait1} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
@@ -143,7 +144,7 @@ const Main = (): ReactElement => {
           </Box>
         </Container>
       </Box>
-      <Box sx={{ backgroundColor: 'var(--background)', paddingBottom: '5rem' }}>
+      <Box sx={{ backgroundColor: 'var(--light)', paddingBottom: '5rem' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', py: 8 }}>
             <Typography variant="h2" sx={{ mt: 4, backgroundColor: 'var(--grey)', color: 'var(--light)', p: 2 }} >
@@ -171,6 +172,7 @@ const Main = (): ReactElement => {
           </Box>
         </Container>
       </Box>
+      <Footer/>
     </>
   );
 }

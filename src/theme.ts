@@ -7,9 +7,11 @@ const theme = createTheme({
         root: {
           '&:hover': {
             backgroundColor: 'var(--primary)',
+            color: 'var(--secondary)',
           },
           '&.active': {
             backgroundColor: 'var(--primary)',
+            color: 'var(--secondary)',
           },
         },
       },
@@ -19,9 +21,11 @@ const theme = createTheme({
         root: {
           '&:hover': {
             backgroundColor: 'var(--primary)',
+            color: 'var(--secondary)',
           },
           '&.active': {
             backgroundColor: 'var(--primary)',
+            color: 'var(--secondary)',
           },
         },
       },
@@ -31,9 +35,11 @@ const theme = createTheme({
         root: {
           '&:hover': {
             backgroundColor: 'var(--primary)',
+            color: 'var(--secondary)',
           },
           '&.active': {
             backgroundColor: 'var(--primary)',
+            color: 'var(--secondary)',
           },
         },
       },

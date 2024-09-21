@@ -10,7 +10,7 @@ import imageCTG3 from './assets/images/ctg_3.jpeg'
 import imageCTG4 from './assets/images/ctg_4.JPG'
 import imageCTG5 from './assets/images/ctg_5.JPG'
 import imageCTG6 from './assets/images/ctg_6.jpeg'
-
+import Footer from './Footer';
 
 const Main = (): ReactElement => {
   return (
@@ -22,11 +22,11 @@ const Main = (): ReactElement => {
             <Typography variant="h2">
               "Nunca olvides de donde vienes"
             </Typography>
-            <Typography variant="body1" sx={{ mt: 4, backgroundColor: 'var(--grey)', color: 'var(--light)', p: 2 }} >
+            <Typography variant="h5" sx={{ mt: 4, backgroundColor: 'var(--grey)', color: 'var(--light)', p: 2 }} >
               Meet Clear To Go Team, a.k.a CTG
             </Typography>
             <Typography variant="body1" sx={{ mt: 4 }} >
-              CTG was definitely a game changer for me. I learned so much from these awesome people. There’s a lot I could share, but check out these pictures instead!
+              CTG was definitely a game changer for me. I learned so much from these awesome people, not only professionally but also as a human being. There’s a lot I could share, but check out these pictures instead!
             </Typography>
             <Carousel sx={{ width: '100%', my: 4, borderRadius: '.5rem' }} interval={5000} animation={'slide'} height={'50vw'} indicators={false} duration={750}>
               <LazyLoadImage src={imageCTG4} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
@@ -39,13 +39,14 @@ const Main = (): ReactElement => {
           </Box>
         </Container>
       </Box>
-      <Box sx={{ backgroundColor: 'var(--background)', paddingBottom: '5rem' }}>
+      <Box sx={{ backgroundColor: 'var(--light)', paddingBottom: '5rem' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', py: 8 }}>
 
           </Box>
         </Container>
       </Box>
+      <Footer/>
     </>
   );
 }

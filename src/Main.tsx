@@ -8,13 +8,14 @@ import { IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 const Main = (): ReactElement => {
   return (
     <>
       <NavBar/>
       <Box sx={{ backgroundColor: 'var(--background)', paddingBottom: '5rem' }}>
-        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Container sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
           <Grid container spacing={0} sx={{ margin: '1rem 0' }}>
             <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', pr: { xs: 0, md: 2 } }}>
               <Typography variant="h1">
@@ -26,7 +27,7 @@ const Main = (): ReactElement => {
               <Typography variant="body1" sx={{ mt: 1 }}>
                 I really enjoy building solutions with software, playing tennis, videogames and taking a deep breath in the middle of the woods
               </Typography>
-              <Box sx={{ mt: 2 }}>
+              <Box sx={{ my: 2 }}>
                 <IconButton
                   href="https://github.com/itsmeurbi"
                   target="_blank"
@@ -34,7 +35,7 @@ const Main = (): ReactElement => {
                   aria-label="external link"
                   size="large"
                 >
-                  <GitHubIcon fontSize="large" sx={{ color: 'var(--primary)' }}/>
+                  <GitHubIcon fontSize="large"/>
                 </IconButton>
                 <IconButton
                   href="https://www.linkedin.com/in/itsmeurbi/"
@@ -43,7 +44,7 @@ const Main = (): ReactElement => {
                   aria-label="external link"
                   size="large"
                 >
-                  <LinkedInIcon fontSize="large" sx={{ color: 'var(--primary)' }}/>
+                  <LinkedInIcon fontSize="large"/>
                 </IconButton>
               </Box>
             </Grid>
@@ -57,7 +58,7 @@ const Main = (): ReactElement => {
       </Box>
       <Box sx={{ backgroundColor: 'var(--light)' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-          <Grid container spacing={0} sx={{ margin: '-4rem 0 4rem', backgroundColor: 'var(--grey)', padding: '2rem' }}>
+          <Grid container spacing={0} sx={{ margin: '-4rem 0', backgroundColor: 'var(--grey)', padding: '2rem' }}>
             <Grid item xs={12} md={7}>
               <Typography variant="h2" sx={{ color: 'var(--light)' }}>
                 My Stack
@@ -117,7 +118,7 @@ const Main = (): ReactElement => {
                   </Typography>
                   <List style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                     <ListItem sx={{ display: 'list-item', py: 0 }}>
-                      <ListItemText primary="japcolControl; a WIP Rails application that will help JAPCOL to collect data and generate reports for nonprofit organizations in Colima." />
+                      <ListItemText primary="japcolControl; a WIP Rails application that will help JAPCOL to collect data and generate reports for nonprofit organizations in Colima" />
                     </ListItem>
                     <ListItem sx={{ display: 'list-item', py: 0 }}>
                       <ListItemText primary={
@@ -264,14 +265,7 @@ const Main = (): ReactElement => {
           </Grid>
         </Container>
       </Box>
-
-      <Box sx={{ backgroundColor: 'var(--background)' }}>
-        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
-          <Typography variant="caption">
-            In case you've been wondering, color pallet was taken from Nier Automata; what a wonderful videogame
-          </Typography>
-        </Container>
-      </Box>
+      <Footer/>
     </>
   );
 }
