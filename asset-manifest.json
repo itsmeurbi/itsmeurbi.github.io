@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.27425c7c.css",
-    "main.js": "/static/js/main.98e8f075.js",
+    "main.js": "/static/js/main.6d02beb3.js",
     "static/js/453.64ce8c6b.chunk.js": "/static/js/453.64ce8c6b.chunk.js",
     "static/media/landscape_2.JPG": "/static/media/landscape_2.e83527198cbc84a1d9c8.JPG",
     "static/media/portrait_4.JPG": "/static/media/portrait_4.b3843419e1c9f7a24463.JPG",
     "static/media/animal_9.JPG": "/static/media/animal_9.d3f9daccb0db19291df2.JPG",
+    "static/media/ctg_5.JPG": "/static/media/ctg_5.cdf5b617a7d71578ee4a.JPG",
     "static/media/animal_3.JPG": "/static/media/animal_3.a0994f1dc4a5ea7b3079.JPG",
     "static/media/portrait_5.JPG": "/static/media/portrait_5.655ac03d02edd7a61d99.JPG",
     "static/media/flower_3.JPG": "/static/media/flower_3.3e25145633f5ea7e1e9b.JPG",
     "static/media/portrait_6.JPG": "/static/media/portrait_6.7e9873ff09a38dfa6715.JPG",
+    "static/media/ctg_4.JPG": "/static/media/ctg_4.58c08fdfdd0d00ad32c4.JPG",
     "static/media/portrait_3.JPG": "/static/media/portrait_3.ef92f709b99d7d10317c.JPG",
     "static/media/animal_6.JPG": "/static/media/animal_6.0847e8df9dee019fedd0.JPG",
     "static/media/animal_8.JPG": "/static/media/animal_8.65cea627736eda3c12f5.JPG",
@@ -25,7 +27,11 @@
     "static/media/flower_1.JPG": "/static/media/flower_1.4762aca6da20c06107d3.JPG",
     "static/media/landscape_1.JPG": "/static/media/landscape_1.bd2425096a5c61a3ae50.JPG",
     "static/media/animal_1.JPG": "/static/media/animal_1.a8247cea786e32dc83c3.JPG",
+    "static/media/ctg_6.jpeg": "/static/media/ctg_6.41c0b562459579e55e60.jpeg",
     "static/media/dogfella.JPG": "/static/media/dogfella.8d37041cdcc959cd2ac8.JPG",
+    "static/media/ctg_3.jpeg": "/static/media/ctg_3.3b3004a772d7fccb5fce.jpeg",
+    "static/media/ctg_1.JPG": "/static/media/ctg_1.121d10022672598769e4.JPG",
+    "static/media/ctg_2.JPG": "/static/media/ctg_2.6669d5019d0dd25ebebb.JPG",
     "static/media/react.png": "/static/media/react.f153eb9f28437192c6a0.png",
     "static/media/ruby_on_rails.png": "/static/media/ruby_on_rails.d6a0c3c35af94c136609.png",
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.4535474e1cf8598695ad.woff2",
@@ -86,11 +92,11 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/static/media/roboto-greek-ext-300-normal.b590dbe5c639944366d1.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "main.27425c7c.css.map": "/static/css/main.27425c7c.css.map",
-    "main.98e8f075.js.map": "/static/js/main.98e8f075.js.map",
+    "main.6d02beb3.js.map": "/static/js/main.6d02beb3.js.map",
     "453.64ce8c6b.chunk.js.map": "/static/js/453.64ce8c6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27425c7c.css",
-    "static/js/main.98e8f075.js"
+    "static/js/main.6d02beb3.js"
   ]
 }
