@@ -28,7 +28,7 @@ const Main = (): ReactElement => {
             <Typography variant="body1" sx={{ mt: 4 }} >
               CTG was definitely a game changer for me. I learned so much from these awesome people. There’s a lot I could share, but check out these pictures instead!
             </Typography>
-            <Carousel sx={{ width: '100%', my: 4 }} interval={5000} animation={'slide'} height={'50vw'} indicators={false} duration={750}>
+            <Carousel sx={{ width: '100%', my: 4, borderRadius: '.5rem' }} interval={5000} animation={'slide'} height={'50vw'} indicators={false} duration={750}>
               <LazyLoadImage src={imageCTG4} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageCTG3} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageCTG1} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
