@@ -1,6 +1,6 @@
 import { type ReactElement } from 'react';
 import './App.css';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, Link } from '@mui/material';
 import NavBar from './NavBar';
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Carousel from 'react-material-ui-carousel'
@@ -42,7 +42,42 @@ const Main = (): ReactElement => {
       <Box sx={{ backgroundColor: 'var(--light)', paddingBottom: '5rem' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', py: 8 }}>
+            <Typography variant="h5" sx={{ mt: 4, backgroundColor: 'var(--grey)', color: 'var(--light)', p: 2 }} >
+              Web Dev Talks
+            </Typography>
 
+            <Typography variant="body1" sx={{ mt: 4 }} >
+              It's been almost 3 years since I started contributing to WDT. I assist in managing social media, setting up and manipulating the live stream, collecting speakers' and sponsors' information, and helping organize the events in general
+            </Typography>
+            <Typography variant="body1" >
+              <em>"Web Dev Talks, also known as WDT, is a Colima-based community primarily focused on web development that does not belong to any company. We are the first community of software developers in the state and also the most diverse, with 10 years of experience supporting us."</em>
+            </Typography>
+            <Typography variant="body1">
+              Recent participation includes the{' '}
+              <Link
+                href="https://www.facebook.com/story.php?story_fbid=pfbid01C8dLihbxDJ2pN3nQzQoWSchBx8hAvP6YN6UtKVXcNCGt4tro4t5Cidw35K3om4Wl&id=100067931119189&mibextid=qC1gEa"
+                target="_blank"
+                rel="noopener"
+              >
+                10th anniversary of WDT
+              </Link>
+              {' '}and{' '}
+              <Link
+                href="https://www.facebook.com/story.php?story_fbid=pfbid02VkJUfiiZQZNQeqT8KZb7mYbp4BDnMmeoTs31NcJBfgGiFNstSDCvKzZdciDhojHPl&id=100067931119189&mibextid=qC1gEa"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub Field Day Mexico
+              </Link>.
+              You can find more information in our official{' '}
+              <Link
+                href="https://www.webdevtalks.mx/"
+                target="_blank"
+                rel="noopener"
+              >
+                website
+              </Link>
+            </Typography>
           </Box>
         </Container>
       </Box>
