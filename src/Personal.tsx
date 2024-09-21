@@ -159,7 +159,7 @@ const Main = (): ReactElement => {
                   <img src={imageAnimal6} alt="Ball python" width="100%" style={{ borderRadius: '.5rem' }}/>
                 </Grid>
                 <Grid item xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', pr: { xs: 0, md: 2 }, mt: { xs: 4, md: 0 } } }>
-                  <video width="100%" height="100%" controls autoPlay loop muted style={{ objectFit: 'cover', borderRadius: '.5rem' }}>
+                  <video width="100%" height="100%" controls loop muted style={{ objectFit: 'cover', borderRadius: '.5rem' }}>
                     <source src={videoJoseLuis} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
