@@ -29,6 +29,8 @@ import imagePortrait4 from './assets/images/portrait_4.JPG'
 import imagePortrait5 from './assets/images/portrait_5.JPG'
 import imagePortrait6 from './assets/images/portrait_6.JPG'
 import imagePortrait7 from './assets/images/portrait_7.JPG'
+import imagePortrait8 from './assets/images/portrait_8.JPG'
+import imagePortrait9 from './assets/images/portrait_9.JPG'
 import videoJoseLuis from './assets/images/jose_luis.mp4'
 import Footer from './Footer';
 
@@ -122,6 +124,7 @@ const Main = (): ReactElement => {
               <LazyLoadImage src={imagePortrait1} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageAnimal3} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageLandscape2} alt={'Landscape image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+              <LazyLoadImage src={imagePortrait8} alt={'Landscape image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageAnimal5} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imagePortrait7} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageAnimal6} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
@@ -129,6 +132,7 @@ const Main = (): ReactElement => {
               <LazyLoadImage src={imageAnimal7} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imagePortrait4} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageAnimal9} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+              <LazyLoadImage src={imagePortrait9} alt={'Landscape image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageAnimal10} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageFlower2} alt={'Flower image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
               <LazyLoadImage src={imageAnimal8} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
