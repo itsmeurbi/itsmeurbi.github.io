@@ -59,9 +59,9 @@ const NavBar = (): ReactElement => {
                   <Typography variant='h6' sx={{ color: 'var(--secondary)' }}>Personal</Typography>
                 </Button>
               </Link>
-              <Link to="/carrer" style={{ textDecoration: 'none', height: '100%' }}>
-                <Button className={isActive('/carrer') ? 'active' : '' } sx={{ height: '100%', borderRadius: '0', textTransform: 'none', py: 1 }}>
-                  <Typography variant='h6' sx={{ color: 'var(--secondary)' }}>Carrer</Typography>
+              <Link to="/career" style={{ textDecoration: 'none', height: '100%' }}>
+                <Button className={isActive('/career') ? 'active' : '' } sx={{ height: '100%', borderRadius: '0', textTransform: 'none', py: 1 }}>
+                  <Typography variant='h6' sx={{ color: 'var(--secondary)' }}>Career</Typography>
                 </Button>
               </Link>
             </Box>
@@ -86,9 +86,9 @@ const NavBar = (): ReactElement => {
               </Link>
             </ListItem>
             <ListItem sx={{ px: 0 }}>
-              <Link to="/carrer" style={{ textDecoration: 'none', width: '100%' }}>
-                <ListItemButton className={isActive('/carrer') ? 'active' : ''}>
-                  <Typography variant='h6' sx={{ color: 'var(--black)' }}>Carrer</Typography>
+              <Link to="/career" style={{ textDecoration: 'none', width: '100%' }}>
+                <ListItemButton className={isActive('/career') ? 'active' : ''}>
+                  <Typography variant='h6' sx={{ color: 'var(--black)' }}>Career</Typography>
                 </ListItemButton>
               </Link>
             </ListItem>
