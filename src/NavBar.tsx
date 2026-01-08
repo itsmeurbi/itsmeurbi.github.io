@@ -73,21 +73,21 @@ const NavBar = (): ReactElement => {
           <List>
             <ListItem sx={{ px: 0 }}>
               <Link to="/" style={{ textDecoration: 'none', width: '100%' }}>
-                <ListItemButton className={isActive('/') ? 'active' : ''}>
+                <ListItemButton selected={isActive('/')}>
                   <Typography variant='h6' sx={{ color: 'var(--black)' }}>Urbi</Typography>
                 </ListItemButton>
               </Link>
             </ListItem>
             <ListItem sx={{ px: 0 }}>
               <Link to="/personal" style={{ textDecoration: 'none', width: '100%' }}>
-                <ListItemButton className={isActive('/personal') ? 'active' : ''}>
+                <ListItemButton selected={isActive('/personal')}>
                   <Typography variant='h6' sx={{ color: 'var(--black)' }}>Personal</Typography>
                 </ListItemButton>
               </Link>
             </ListItem>
             <ListItem sx={{ px: 0 }}>
               <Link to="/career" style={{ textDecoration: 'none', width: '100%' }}>
-                <ListItemButton className={isActive('/career') ? 'active' : ''}>
+                <ListItemButton selected={isActive('/career')}>
                   <Typography variant='h6' sx={{ color: 'var(--black)' }}>Career</Typography>
                 </ListItemButton>
               </Link>

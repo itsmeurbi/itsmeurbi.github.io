@@ -37,7 +37,11 @@ const theme = createTheme({
             backgroundColor: 'var(--primary)',
             color: 'var(--secondary)',
           },
-          '&.active': {
+          '&.Mui-selected': {
+            backgroundColor: 'var(--primary)',
+            color: 'var(--secondary)',
+          },
+          '&.Mui-selected:hover': {
             backgroundColor: 'var(--primary)',
             color: 'var(--secondary)',
           },
