@@ -49,11 +49,11 @@ const Main = (): ReactElement => {
               About me
             </Typography>
             <Typography variant="body1" sx={{ mt: 4 }}>
-              There’s this thing about technology and nature that’s always been a big part of me. Loved animals since I was a kid—we had chickens, dogs, cows, ducks, fish, peacocks, and cats. Lately, I’ve gotten into plants. Back when I was in Colima, I used to visit nurseries all the time, adding more greenery to my place. Now, in Querétaro, I just set up my office with some monsteras, ficus, and pothos
+              There's this thing about technology and nature that's always been a big part of me. I've loved animals since I was a kid—we had chickens, dogs, cows, ducks, fish, peacocks, and cats. Lately, I've gotten into plants. Back when I was in Colima, I used to visit nurseries all the time, adding more greenery to my place. Now in Querétaro, I just set up my office with some monsteras, ficus, and pothos
             </Typography>
             <Divider sx={{ width: '100%', my: 2 }}/>
             <Typography variant="body1">
-              As an introvert, I’m all about quietness, being in nature, and hanging out in small groups. Not really into nightclubs, bars with loud music, or crowded places. Always down for breakfast with coffee, though—not always up for a concert, hehe
+              As an introvert, I'm all about quietness, being in nature, and hanging out in small groups. Not really into nightclubs, bars with loud music, or crowded places. Always down for breakfast with coffee though—not always up for concerts hehe
             </Typography>
             <Divider sx={{ width: '100%', my: 2 }}/>
             <Typography variant="body1">
@@ -107,7 +107,7 @@ const Main = (): ReactElement => {
                     </Typography>
                   </Box>
                   <Typography variant="body1" sx={{ color: 'var(--light)', mt: 2 }}>
-                    A few years ago (about 3 years back), I was feeling bored, so I decided to buy a camera. It’s something I don’t practice that often, but I enjoy shooting portraits, plants, and animals. I still need to learn how to edit in Lightroom, hehe!
+                    About 3 years ago, I was feeling bored, so I decided to buy a camera. It's something I don't practice that often, but I enjoy shooting portraits, plants, and animals. I still need to learn how to edit in Lightroom hehe!
                   </Typography>
                   <Typography variant="body1" sx={{ color: 'var(--light)', mt: 2 }}>
                     You can find some of my pictures in the Gallery section
@@ -172,7 +172,7 @@ const Main = (): ReactElement => {
               El intrepido duende José Luis
             </Typography>
             <Typography variant="body1" sx={{ mt: 4 }}>
-              This is Jose Luis, my one and only pet for now. He's a very shy Ball Python. Contrary to what people usually think, he's super tame
+              This is José Luis, my one and only pet for now. He's a very shy ball python. Contrary to what people usually think, he's super tame
             </Typography>
             <Box sx={{ mt: 4, width: '100%' }}>
               <Grid container spacing={2}>

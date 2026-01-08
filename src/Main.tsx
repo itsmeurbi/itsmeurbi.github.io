@@ -30,10 +30,10 @@ const Main = (): ReactElement => {
                 This is Miguel, a.k.a Urbi
               </Typography>
               <Typography variant="body1">
-                Proficient software engineer with over 7 years of experience, specializing in Ruby on Rails and React web applications. Passionate about collaborating with talented professionals and actively contributing to the tech community.
+                Software engineer with over 7 years of experience, specializing in Ruby on Rails and React web applications. Passionate about collaborating with talented professionals and actively contributing to the tech community.
               </Typography>
               <Typography variant="body1" sx={{ mt: 1 }}>
-                I really enjoy building solutions with software, playing tennis, videogames and taking a deep breath in the middle of the woods
+                I really enjoy building solutions with software, playing tennis, video games, and taking a deep breath in the middle of the woods
               </Typography>
               <Box sx={{ my: 2 }}>
                 <IconButton
@@ -91,10 +91,10 @@ const Main = (): ReactElement => {
                   Me As A Professional
                 </Typography>
                 <Typography variant="body1">
-                  When I was a child, I always wanted to be a veterinarian—until the day I met a computer when I was about 8 years old. I would spend hours each day figuring things out, creating 'art' in Paint, and playing video games with my NES/SNES emulator. In middle school, I made a decision: I would become a Computer Systems Engineer.
+                  When I was a child, I always wanted to be a veterinarian—until I met a computer at age 8. I would spend hours each day figuring things out, creating 'art' in Paint, and playing video games with my NES/SNES emulator. In middle school, I made a decision: I would become a Computer Systems Engineer.
                 </Typography>
                 <Typography variant="body1">
-                  Now I consider myself a pasionated web developer who likes to actively participate with multidiciplinary projects and contribute to the IT community
+                  Now I consider myself a passionate web developer who loves to actively participate in multidisciplinary projects and contribute to the IT community
                 </Typography>
               </Box>
             </Grid>
@@ -119,14 +119,14 @@ const Main = (): ReactElement => {
                     Collaborator
                   </Typography>
                   <Typography variant="body1" sx={{ mt: 1 }}>
-                    Always open to collaborate with my friend's side-projects, as long as my agenda allows me hehe
+                    Always open to collaborate on my friends' side projects, as long as my schedule allows it hehe
                   </Typography>
                   <Typography variant="body1">
                     Recent collaborations includes:
                   </Typography>
                   <List style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
                     <ListItem sx={{ display: 'list-item', py: 0 }}>
-                      <ListItemText primary="japcolControl; a WIP Rails application that will help JAPCOL to collect data and generate reports for nonprofit organizations in Colima" />
+                      <ListItemText primary="japcolControl; a WIP Rails application that helps JAPCOL collect data and generate reports for nonprofit organizations in Colima" />
                     </ListItem>
                     <ListItem sx={{ display: 'list-item', py: 0 }}>
                       <ListItemText primary={
