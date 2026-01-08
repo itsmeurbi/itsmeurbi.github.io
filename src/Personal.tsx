@@ -136,7 +136,7 @@ const Main = (): ReactElement => {
                 loop={true}
                 style={{ width: '100%', height: '100%' }}
               >
-                <SwiperSlide><img src={imageAnimal1} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal1} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
                 <SwiperSlide><img src={imagePortrait1} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
                 <SwiperSlide><img src={imageAnimal3} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
                 <SwiperSlide><img src={imageLandscape2} alt={'Landscape photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
