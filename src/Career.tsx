@@ -47,7 +47,7 @@ const Main = (): ReactElement => {
             </Typography>
 
             <Typography variant="body1" sx={{ mt: 4 }} >
-              It's been almost 3 years since I started contributing to WDT. I assist in managing social media, setting up and manipulating the live stream, collecting speakers' and sponsors' information, and helping organize the events in general
+              It's been almost 5 years since I started contributing to WDT. I assist in managing social media, setting up and manipulating the live stream, collecting speakers' and sponsors' information, and helping organize the events in general
             </Typography>
             <Typography variant="body1" >
               <em>"Web Dev Talks, also known as WDT, is a Colima-based community primarily focused on web development that does not belong to any company. We are the first community of software developers in the state and also the most diverse, with 10 years of experience supporting us."</em>

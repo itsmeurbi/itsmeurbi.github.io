@@ -22,7 +22,7 @@ const Main = (): ReactElement => {
                 This is Miguel, a.k.a Urbi
               </Typography>
               <Typography variant="body1">
-                Proficient software engineer with over 5 years of experience, specializing in Ruby on Rails and React web applications. Passionate about collaborating with talented professionals and actively contributing to the tech community.
+                Proficient software engineer with over 7 years of experience, specializing in Ruby on Rails and React web applications. Passionate about collaborating with talented professionals and actively contributing to the tech community.
               </Typography>
               <Typography variant="body1" sx={{ mt: 1 }}>
                 I really enjoy building solutions with software, playing tennis, videogames and taking a deep breath in the middle of the woods

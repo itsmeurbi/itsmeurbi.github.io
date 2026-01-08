@@ -91,7 +91,7 @@ const Main = (): ReactElement => {
                     </Typography>
                   </Box>
                   <Typography variant="body1" sx={{ color: 'var(--light)', mt: 2 }}>
-                    They say exercising makes you feel better—and it’s true! This year, I started playing tennis. I was really bad at it in the beginning, but I kept practicing, and now I think I’m not that bad, haha. I really enjoy going to practice; it makes me feel… good!
+                    I've been playing tennis for about two years now, and it's become one of my favorite ways to unwind. I really enjoy going to practice—it always lifts my mood!
                   </Typography>
                 </Box>
               </Grid>
@@ -104,7 +104,7 @@ const Main = (): ReactElement => {
                     </Typography>
                   </Box>
                   <Typography variant="body1" sx={{ color: 'var(--light)', mt: 2 }}>
-                    Recently, I was feeling bored, so I decided to buy a camera. It’s something I don’t practice that often, but I enjoy shooting portraits, plants, and animals. I still need to learn how to edit in Lightroom, hehe!
+                    A few years ago (about 3 years back), I was feeling bored, so I decided to buy a camera. It’s something I don’t practice that often, but I enjoy shooting portraits, plants, and animals. I still need to learn how to edit in Lightroom, hehe!
                   </Typography>
                   <Typography variant="body1" sx={{ color: 'var(--light)', mt: 2 }}>
                     You can find some of my pictures in the Gallery section
