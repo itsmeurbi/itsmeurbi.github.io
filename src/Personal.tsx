@@ -5,8 +5,11 @@ import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import LocalSeeIcon from '@mui/icons-material/LocalSee';
 import SportsTennisIcon from '@mui/icons-material/SportsTennis';
 import NavBar from './NavBar';
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-import Carousel from 'react-material-ui-carousel'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import imageAnimal1 from './assets/images/animal_1.JPG'
 import imageAnimal2 from './assets/images/animal_2.JPG'
 import imageAnimal3 from './assets/images/animal_3.JPG'
@@ -66,7 +69,7 @@ const Main = (): ReactElement => {
               My hobbies
             </Typography>
             <Grid container spacing={2} sx={{ mt: 4 }}>
-              <Grid item xs={12} md={4}>
+              <Grid size={{ xs: 12, md: 4 }}>
                 <Box sx={{ backgroundColor: 'var(--grey)', p: 2, height: '100%' }}>
                   <Box sx={{ color: 'var(--light)', display: 'flex', alignItems: 'center' }}>
                     <VideogameAssetIcon sx={{ mr: 2 }}/>
@@ -82,7 +85,7 @@ const Main = (): ReactElement => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid size={{ xs: 12, md: 4 }}>
                 <Box sx={{ backgroundColor: 'var(--grey)', p: 2, height: '100%', mt: { xs: 4, md: 0 } }}>
                   <Box sx={{ color: 'var(--light)', display: 'flex', alignItems: 'center' }}>
                     <SportsTennisIcon sx={{ mr: 2 }}/>
@@ -95,7 +98,7 @@ const Main = (): ReactElement => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ backgroundColor: 'var(--grey)', p: 2, height: '100%', mt: { xs: 8, md: 0 } }}>
                   <Box sx={{ color: 'var(--light)', display: 'flex', alignItems: 'center' }}>
                     <LocalSeeIcon sx={{ mr: 2 }}/>
@@ -119,57 +122,75 @@ const Main = (): ReactElement => {
         <Container>
           <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
             <Typography variant="h2" sx={{ my: 5, textAlign: 'center', color: 'var(--light)' }}>Gallery</Typography>
-            <Carousel sx={{ width: '100%', my: 4, borderRadius: '.5rem' }} interval={5000} animation={'slide'} height={'50vw'} indicators={false} duration={750} >
-              <LazyLoadImage src={imageAnimal1} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait1} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal3} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageLandscape2} alt={'Landscape image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait8} alt={'Landscape image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal5} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait7} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal6} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait3} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal7} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait4} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal9} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait9} alt={'Landscape image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal10} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageFlower2} alt={'Flower image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal8} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageFlower3} alt={'Flower image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageLandscape1} alt={'Landscape image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait2} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal2} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait5} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageFlower1} alt={'Flower image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imageAnimal4} alt={'Animal image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-              <LazyLoadImage src={imagePortrait6} alt={'Portrait image'} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
-            </Carousel>
+            <Box sx={{ width: '100%', my: 4, borderRadius: '.5rem', overflow: 'hidden', height: '50vw' }}>
+              <Swiper
+                modules={[Autoplay, Pagination, Navigation]}
+                spaceBetween={0}
+                slidesPerView={1}
+                navigation={true}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                speed={750}
+                loop={true}
+                style={{ width: '100%', height: '100%' }}
+              >
+                <SwiperSlide><img src={imageAnimal1} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait1} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal3} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageLandscape2} alt={'Landscape photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait8} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal5} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait7} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal6} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait3} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal7} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait4} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal9} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait9} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal10} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageFlower2} alt={'Flower photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal8} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageFlower3} alt={'Flower photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageLandscape1} alt={'Landscape photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait2} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal2} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait5} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageFlower1} alt={'Flower photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imageAnimal4} alt={'Animal photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+                <SwiperSlide><img src={imagePortrait6} alt={'Portrait photo'} height={'100%'} width={'100%'} loading="lazy" style={{ objectFit: "cover" }} /></SwiperSlide>
+              </Swiper>
+            </Box>
           </Box>
         </Container>
       </Box>
       <Box sx={{ backgroundColor: 'var(--light)', paddingBottom: '5rem' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
-          <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', py: 8 }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', py: 8, width: '100%' }}>
             <Typography variant="h2" sx={{ mt: 4, backgroundColor: 'var(--grey)', color: 'var(--light)', p: 2 }} >
               El intrepido duende José Luis
             </Typography>
             <Typography variant="body1" sx={{ mt: 4 }}>
               This is Jose Luis, my one and only pet for now. He's a very shy Ball Python. Contrary to what people usually think, he's super tame
             </Typography>
-            <Box sx={{ mt: 4 }}>
-              <Grid container spacing={0} sx={{ margin: '1rem 0' }}>
-                <Grid item xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', pr: { xs: 0, md: 2 }, mt: { xs: 4, md: 0 } } }>
-                  <img src={imageAnimal6} alt="Ball python" width="100%" style={{ borderRadius: '.5rem' }}/>
+            <Box sx={{ mt: 4, width: '100%' }}>
+              <Grid container spacing={2}>
+                <Grid size={{ xs: 12, md: 4 }}>
+                  <Box sx={{ borderRadius: '.5rem', overflow: 'hidden' }}>
+                    <img src={imageAnimal6} alt="Ball python" width="100%" loading="lazy" style={{ display: 'block' }} />
+                  </Box>
                 </Grid>
-                <Grid item xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', pr: { xs: 0, md: 2 }, mt: { xs: 4, md: 0 } } }>
-                  <video width="100%" height="100%" controls loop muted style={{ objectFit: 'cover', borderRadius: '.5rem' }}>
+                <Grid size={{ xs: 12, md: 4 }}>
+                  <video width="100%" height="100%" controls loop muted style={{ objectFit: 'cover', borderRadius: '.5rem', display: 'block' }}>
                     <source src={videoJoseLuis} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </Grid>
-                <Grid item xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', pr: { xs: 0, md: 2 }, mt: { xs: 4, md: 0 } } }>
-                  <img src={imageAnimal7} alt="Ball python" width="100%" style={{ borderRadius: '.5rem' }}/>
+                <Grid size={{ xs: 12, md: 4 }}>
+                  <Box sx={{ borderRadius: '.5rem', overflow: 'hidden' }}>
+                    <img src={imageAnimal7} alt="Ball python" width="100%" loading="lazy" style={{ display: 'block' }} />
+                  </Box>
                 </Grid>
               </Grid>
             </Box>

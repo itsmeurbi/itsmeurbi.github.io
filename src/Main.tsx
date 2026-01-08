@@ -3,7 +3,7 @@ import './App.css';
 import dogfella from './assets/images/dogfella.JPG';
 import rubyOnRails from './assets/images/ruby_on_rails.png'
 import react from './assets/images/react.png'
-import { Box, Container, Grid, Typography, Divider, Link, List, ListItem, ListItemText } from '@mui/material';
+import { Box, Container, Typography, Divider, Grid, Link, List, ListItem, ListItemText } from '@mui/material';
 import { IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -17,7 +17,15 @@ const Main = (): ReactElement => {
       <Box sx={{ backgroundColor: 'var(--background)', paddingBottom: '5rem' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
           <Grid container spacing={0} sx={{ margin: '1rem 0' }}>
-            <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', pr: { xs: 0, md: 2 } }}>
+            <Grid
+              size={{ xs: 12, md: 6 }}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                pr: { xs: 0, md: 2 },
+              }}
+            >
               <Typography variant="h1">
                 This is Miguel, a.k.a Urbi
               </Typography>
@@ -48,9 +56,9 @@ const Main = (): ReactElement => {
                 </IconButton>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6} p={0} sx={{ pl: { xs: 0, md: 2 } }}>
+            <Grid size={{ xs: 12, md: 6 }} p={0} sx={{ pl: { xs: 0, md: 2 } }}>
               <Box sx={{ borderRadius: '.5rem', overflow: 'hidden' }}>
-                <img src={dogfella} alt="logo" width="100%" />
+                <img src={dogfella} alt="logo" height="100%" width="100%" loading="eager" style={{ objectFit: 'cover' }} />
               </Box>
             </Grid>
           </Grid>
@@ -59,7 +67,7 @@ const Main = (): ReactElement => {
       <Box sx={{ backgroundColor: 'var(--light)' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
           <Grid container spacing={0} sx={{ margin: '-4rem 0', backgroundColor: 'var(--grey)', padding: '2rem' }}>
-            <Grid item xs={12} md={7}>
+            <Grid size={{ xs: 12, md: 7 }}>
               <Typography variant="h2" sx={{ color: 'var(--light)' }}>
                 My Stack
               </Typography>
@@ -70,14 +78,14 @@ const Main = (): ReactElement => {
                 Familiar with MaterialUI, GraphQL, MongoDB and Typescript
               </Typography>
             </Grid>
-            <Grid item xs={12} md={5} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', mt: { xs: 4, md: 0 } }}>
-              <img src={rubyOnRails} alt="logo" height="50" style={{ objectFit: 'cover' }}/>
-              <img src={react} alt="logo" height="50" style={{ objectFit: 'cover' }}/>
+            <Grid size={{ xs: 12, md: 5 }} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', mt: { xs: 4, md: 0 } }}>
+              <img src={rubyOnRails} alt="logo" height="50" loading="eager" style={{ objectFit: 'cover' }}/>
+              <img src={react} alt="logo" height="50" loading="eager" style={{ objectFit: 'cover' }}/>
             </Grid>
           </Grid>
 
           <Grid container spacing={0} sx={{ padding: '8rem 0' }}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Box sx={{ padding: '2rem' }}>
                 <Typography variant="h2">
                   Me As A Professional
@@ -90,7 +98,7 @@ const Main = (): ReactElement => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6} sx={{ backgroundColor: 'var(--secondary)' }}>
+            <Grid size={{ xs: 12, md: 6 }} sx={{ backgroundColor: 'var(--secondary)' }}>
               <Box sx={{ padding: '2rem' }}>
                 <Box>
                   <Typography variant="h4">
@@ -155,7 +163,7 @@ const Main = (): ReactElement => {
             </Typography>
           </Box>
           <Grid container spacing={0} sx={{ py: 4 }}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography variant="h6" gutterBottom sx={{ color: 'var(--secondary)' }}>
                 Speaking Engagements
               </Typography>
@@ -220,7 +228,7 @@ const Main = (): ReactElement => {
                 </ListItem>
               </List>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography variant="h6" gutterBottom sx={{ color: 'var(--secondary)' }}>
                 Workshops
               </Typography>
